@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+        //선언적 함수 (가장 기본 함수)
+        function func1(){
+            document.write("func1이 실행되었습니다.<br>");
+        }
+        func1();
+        
+        //익명 함수 (이름이 없는 형태)
+        const func2 = function(){
+            document.write("func2가 실행되었습니다.<br>");    
+            
+        }
+        func2();
+        
+        //매개변수가 있는 함수
+        function func3(name){       //(변수)
+            document.write(name);     
+        
+        }
+        func3("func3이 실행되었습니다.<br>");       //데이터값이 변수로 전달됨
+        
+        
+        //리턴값(결과)이 있는 함수
+        function func4(){
+            const str = "func4이 실행되었습니다. <br>";     //변수
+            return str; //변수가 리턴됐기 때문에 결과값이 생김
+        }
+        document.write(func4());
+    </script>
+</body>
+</html>

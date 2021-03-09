@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+        let x = 100;      //변수 x에 숫자 100을 저장
+        let y = "100";    //변수 y에 문자 100을 저장
+        let z = true;
+        
+        document.write(x,"<br>");
+        document.write(typeof x,"<br>");       //x값의 성질을 나타냄(number)
+        document.write(y, "<br>");
+        document.write(typeof y, "<br>");      //y값의 성질을 나타냄(string)
+        document.write(z, "<br>");
+        document.write(typeof z, "<br>");      //z값의 성질을 나타냄(boolean)
+        
+        
+        
+        document.write("<br><br>");
+        
+        let a = 100;        //number
+        let b = "100";      //string
+        
+        document.write(typeof a, "<br>");
+        document.write(typeof b, "<br>");
+        
+        //형변환(string --> number);
+        let c = Number(b);              //string 성질의 데이터값 b 앞에 Number라는 매서드를 입력하여 형변환
+        document.write(typeof c, "<br>");
+        
+        //형변환(number --> string);
+        let d = a = "" + a;             //a에 큰따옴표를 더하고 a에 대입한 후 d에 대입
+        document.write(typeof d, "<br>");
+        
+        //형변환(number --> string);
+        let e = String(c);
+        document.write(typeof e, "<br>");
+        
+    </script>
+</body>
+</html>
